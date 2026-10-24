@@ -1,0 +1,67 @@
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: system-ui, sans-serif;
+  background: #1e1f26;
+  color: #e8e8ea;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  padding: 40px 16px;
+}
+
+.app {
+  width: 100%;
+  max-width: 480px;
+  background: #2a2c36;
+  border-radius: 12px;
+  padding: 24px;
+}
+
+h1 { font-size: 1.5rem; margin-bottom: 20px; }
+
+.form { display: flex; gap: 8px; margin-bottom: 16px; }
+
+.form input {
+  flex: 1;
+  padding: 10px 12px;
+  border: 1px solid #444757;
+  border-radius: 8px;
+  background: #1e1f26;
+  color: inherit;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 14px;
+  background: #4f7cff;
+  color: white;
+}
+
+.filtros { display: flex; gap: 8px; margin-bottom: 16px; }
+
+.filtro { background: #3a3d4a; }
+.filtro.ativo { background: #4f7cff; }
+
+.lista { list-style: none; }
+
+.tarefa {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 0;
+  border-bottom: 1px solid #3a3d4a;
+}
+
+.tarefa .texto { flex: 1; }
+
+.tarefa.concluida .texto {
+  text-decoration: line-through;
+  opacity: 0.5;
+}
+
+.excluir { background: transparent; color: #ff6b6b; padding: 4px 8px; }
+
+.rodape { margin-top: 16px; font-size: 0.9rem; opacity: 0.7; }
