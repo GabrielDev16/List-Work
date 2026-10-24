@@ -73,6 +73,7 @@ form.addEventListener("submit", (event) => {
   const texto = input.value;
   if (texto === "") return;
   adicionarTarefa(texto);
+  input.value = ""; // resolução do T-001 -> apagar o texto do input apos adicionar a tarefa
 });
 
 botoesFiltro.forEach((botao) => {
