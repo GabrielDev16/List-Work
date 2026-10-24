@@ -70,10 +70,10 @@ function adicionarTarefa(texto) {
 
 form.addEventListener("submit", (event) => {
   event.preventDefault();
-  const texto = input.value;
+  const texto = input.value.trim(); // resolução da T-002 -> não deixar enviar o conteudo somente com espaços (.trim();)
   if (texto === "") return;
   adicionarTarefa(texto);
-  input.value = ""; // resolução do T-001 -> apagar o texto do input apos adicionar a tarefa
+  input.value = ""; // resolução do T-001 -> apagar o texto do input apos adicionar a tarefa (input.value = "";)
 });
 
 botoesFiltro.forEach((botao) => {
