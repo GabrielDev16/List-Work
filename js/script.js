@@ -19,7 +19,7 @@ function filtrarTarefas() {
 }
 
 function atualizarContador() {
-  const concluidas = tarefas.filter((t) => t.concluida);
+  const concluidas = tarefas.filter((t) => !t.concluida); // Resolução da T-003 -> numero de tarefas pendentes que antes não coincidia com o valor agora estão de acordo (!t.concluida)
   contador.textContent = concluidas.length;
 }
 

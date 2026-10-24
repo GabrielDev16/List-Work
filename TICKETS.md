@@ -14,9 +14,9 @@
 
 ## Sprint 1 — Bugs simples
 
-**T-001** — Depois de adicionar uma tarefa, o texto continua escrito no campo de entrada. O usuário reclama que precisa apagar na mão toda vez.
+**T-001** — Depois de adicionar uma tarefa, o texto continua escrito no campo de entrada. O usuário reclama que precisa apagar na mão toda vez. OK
 
-**T-002** — É possível criar uma tarefa digitando apenas espaços. Ela aparece na lista como um item "vazio".
+**T-002** — É possível criar uma tarefa digitando apenas espaços. Ela aparece na lista como um item "vazio". OK
 
 **T-003** — O rodapé diz "X tarefa(s) pendente(s)", mas o número não bate com o que está pendente na tela.
 
