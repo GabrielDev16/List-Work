@@ -18,11 +18,11 @@
 
 **T-002** — É possível criar uma tarefa digitando apenas espaços. Ela aparece na lista como um item "vazio". OK
 
-**T-003** — O rodapé diz "X tarefa(s) pendente(s)", mas o número não bate com o que está pendente na tela.
+**T-003** — O rodapé diz "X tarefa(s) pendente(s)", mas o número não bate com o que está pendente na tela. OK
 
 ## Sprint 2 — Bugs chatos
 
-**T-004** — Adicione uma tarefa nova e marque ela como concluída. A tarefa errada é marcada.
+**T-004** — Adicione uma tarefa nova e marque ela como concluída. A tarefa errada é marcada. OK
 
 **T-005** — Ao clicar nos botões de filtro, mais de um botão aparece destacado ao mesmo tempo.
 

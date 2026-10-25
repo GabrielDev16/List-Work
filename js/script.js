@@ -9,7 +9,6 @@ let tarefas = [
   { id: 2, texto: "Praticar DOM", concluida: true },
   { id: 3, texto: "Revisar funções", concluida: false },
 ];
-let proximoId = 3;
 let filtroAtual = "todas";
 
 function filtrarTarefas() {
@@ -30,25 +29,25 @@ function alternarTarefa(id) {
 }
 
 function criarItem(tarefa, index) {
-  const li = document.createElement("li");
-  li.className = "tarefa";
-  if (tarefa.concluida) li.classList.add("concluida");
+  const li = document.createElement("li"); // criando uma tag li transparente na memoria
+  li.className = "tarefa"; // adicionando o estilo css na pagina
+  if (tarefa.concluida) li.classList.add("concluida"); // se estiver concluida, aplica o risco na tarefa
 
-  const checkbox = document.createElement("input");
-  checkbox.type = "checkbox";
-  checkbox.checked = tarefa.concluida;
-  checkbox.addEventListener("change", () => alternarTarefa(tarefa.id));
+  const checkbox = document.createElement("input"); // clia o input de cada tarefa nova
+  checkbox.type = "checkbox"; // atribui o tipo de casa input criado
+  checkbox.checked = tarefa.concluida; // já nasce com mascada se estiver concluida
+  checkbox.addEventListener("change", () => alternarTarefa(tarefa.id)); // fica escutando quando o user marca ou desmasca, se marcar ele chama a função alternarTarefa()
 
-  const texto = document.createElement("span");
+  const texto = document.createElement("span"); 
   texto.className = "texto";
-  texto.textContent = tarefa.texto;
+  texto.textContent = tarefa.texto; // pega o nome da tarefa e exibe na lista
 
   const botaoExcluir = document.createElement("button");
   botaoExcluir.className = "excluir";
   botaoExcluir.textContent = "✕";
   botaoExcluir.addEventListener("click", () => {
-    tarefas.splice(index, 1);
-    render();
+    tarefas.splice(index, 1); // percorre o array e exclui exatamente 1 item
+    render(); // redesenha a pagina apos a função ser executada
   });
 
   li.append(checkbox, texto, botaoExcluir);
@@ -64,7 +63,7 @@ function render() {
 }
 
 function adicionarTarefa(texto) {
-  tarefas.push({ id: proximoId++, texto: texto, concluida: false });
+  tarefas.push({ id: Date.now(), texto: texto, concluida: false }); // removido o promixoid = 3 e corrigido o incremento de repetir o id 3 e colocado um id unico por item usando o Date.now()
   render();
 }
 
