@@ -24,7 +24,7 @@
 
 **T-004** — Adicione uma tarefa nova e marque ela como concluída. A tarefa errada é marcada. OK
 
-**T-005** — Ao clicar nos botões de filtro, mais de um botão aparece destacado ao mesmo tempo.
+**T-005** — Ao clicar nos botões de filtro, mais de um botão aparece destacado ao mesmo tempo. OK
 
 **T-006** — Com o filtro "Concluídas" ou "Ativas" ligado, clicar em ✕ às vezes apaga uma tarefa diferente da que foi clicada.
 

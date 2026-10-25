@@ -77,8 +77,14 @@ form.addEventListener("submit", (event) => {
 
 botoesFiltro.forEach((botao) => {
   botao.addEventListener("click", () => {
-    filtroAtual = botao.dataset.filtro;
+    // remove a class ativa dos botões
+    botoesFiltro.forEach((b)=>b.classList.remove("ativo"))
+    
+    // adiciona a classe ativo aos botões que foram clicados
     botao.classList.add("ativo");
+
+    
+    filtroAtual = botao.dataset.filtro;
     render();
   });
 });
